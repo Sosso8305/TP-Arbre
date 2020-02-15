@@ -65,5 +65,90 @@ void insererTableau(arbre* r,int* tab,int taille){
 }
 
 
+void afficher(arbre* r,int decalage){
+    if (r != NULL){
+        printf("%-6i",r->cle);
+
+        if(r->FDroit != NULL){
+            afficher(r->FDroit,decalage+6);
+        }
+
+        if(r->FGauche != NULL){
+            printf("\n");
+
+            int i;
+            for(i=0;i<=(decalage-1);i++){
+                printf(" ");
+            }
+
+            printf("|\n");
+
+            for(i=0;i<=(decalage-1);i++){
+                printf(" ");
+            }
+
+            afficher(r->FGauche,decalage);
+        }
+    }
+}
 
 
+int getCle(arbre* r){
+    if (r != NULL){
+        return r->cle;
+    }
+    return 0;
+}
+
+
+int getValeur(arbre* r){
+    if (r != NULL){
+        return r->valeur;
+    }
+    return 0;
+}
+
+void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r)){
+    if (r != NULL){
+        printf("%-6i",mafct(r));
+
+        if(r->FDroit != NULL){
+            afficherFonction(r->FDroit,decalage+6,mafct);
+        }
+
+        if(r->FGauche != NULL){
+            printf("\n");
+
+            int i;
+            for(i=0;i<=(decalage-1);i++){
+                printf(" ");
+            }
+
+            printf("|\n");
+
+            for(i=0;i<=(decalage-1);i++){
+                printf(" ");
+            }
+
+            afficherFonction(r->FGauche,decalage,mafct);
+        }
+    }
+
+}
+
+
+
+noeud* rechercher(arbre* r, int v){
+    printf("hello \n");
+    if(getCle(r) == v){
+        printf("hey");
+        return r;
+    }
+    printf("gau\n");
+    rechercher(r->FGauche,v);
+    printf("droi\n");
+    rechercher(r->FDroit,v);
+    printf("null");
+    return NULL;
+
+}

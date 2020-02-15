@@ -26,6 +26,27 @@ int main()
 
     insererTableau(unArbre,tab,10);
 
+    noeud* cherche100 = rechercher(unArbre,100);
+
+    if (cherche100 != NULL){
+        printf("J’ai trouve le noeud 100.\n");
+    }
+
+/*
+    noeud* cherche101 = rechercher(unArbre,101);
+    if (cherche101 != NULL){
+        printf("J’ai trouve le noeud 101.\n");
+    }
+
+*/
+
+
+
+/*
+    afficherFonction(unArbre,0,getCle);
+    printf("\n");
+    afficherFonction(unArbre,0,getValeur);
+*/
 
 
     /*
@@ -41,18 +62,18 @@ int main()
 
 
 
+/*
 
-
-    /*int i= 3;
+    int i= 5;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
     printf("\n---------------------------------------------\n");
-    challenge_3();
-    printf("-----------------------------------------------\n");
+    challenge_5();
+    printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");
-
+*/
 
     return 0;
-    */
+
 }

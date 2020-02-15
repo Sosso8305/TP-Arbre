@@ -115,7 +115,7 @@ void challenge_3 (){
    tableau[15] = 113;
    insererTableau(noeud0, tableau, 16);
 }
-/*
+
 void challenge_4 (){
 
    arbre * noeud0 = NULL;
@@ -167,7 +167,7 @@ void challenge_5 (){
    insererTableau(noeud0, tableau, 16);
    afficherFonction(noeud0, 0, evaluate);
 }
-
+/*
 void challenge_6 (){
 
    arbre * noeud0 = NULL;

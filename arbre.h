@@ -53,4 +53,29 @@ void insererDansArbre(arbre* r,noeud* n);
  */
 void insererTableau(arbre* r, int* tab,int taille);
 
+
+/** \brief Aficchage avec trait
+ *
+ * \param r arbre*
+ * \param decalage int
+ * \return void
+ *
+ */
+void afficher(arbre* r,int decalage);
+
+
+int getCle(arbre* r);
+int getValeur(arbre* r);
+
+void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r));
+
+/** \brief recherche l'entier v dans l'arbre r et renvoie son adresse
+ *
+ * \param r arbre*
+ * \param v int
+ * \return int*
+ *
+ */
+noeud* rechercher(arbre* r,int v);
+
 #endif // ARBRE_H_INCLUDED
