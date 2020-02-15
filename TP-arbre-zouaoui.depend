@@ -73,3 +73,30 @@
 	<string.h>
 	"arbre.h"
 
+1581784688 source:d:\insa cvl\2a stpi\algo\tp-arbre\tp1\arbre.c
+	"arbre.h"
+	<stdlib.h>
+	<stdio.h>
+
+1581784478 d:\insa cvl\2a stpi\algo\tp-arbre\tp1\arbre.h
+
+1581772404 source:d:\insa cvl\2a stpi\algo\tp-arbre\tp1\challenge_szouaoui_0.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"arbre.h"
+
+1581784442 source:d:\insa cvl\2a stpi\algo\tp-arbre\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arbre.h"
+	"challenge_SZOUAOUI_0.h"
+
+1581772398 d:\insa cvl\2a stpi\algo\tp-arbre\tp1\challenge_szouaoui_0.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"arbre.h"
+
