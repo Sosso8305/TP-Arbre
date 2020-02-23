@@ -69,6 +69,21 @@ int getValeur(arbre* r);
 
 void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r));
 
+
+
+
+/** \brief Fonction rechercher() avec un parametre memo pour faire passer la cle rechercher à travers les différente appel de la fonction
+ *
+ * \param r arbre*
+ * \param v int
+ * \param memo noeud*
+ * \return noeud*
+ *
+ */
+noeud* rechercherMemo(arbre* r,int v,noeud* memo);
+
+
+
 /** \brief recherche l'entier v dans l'arbre r et renvoie son adresse
  *
  * \param r arbre*
@@ -77,5 +92,8 @@ void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r));
  *
  */
 noeud* rechercher(arbre* r,int v);
+
+
+
 
 #endif // ARBRE_H_INCLUDED

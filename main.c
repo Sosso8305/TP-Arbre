@@ -27,18 +27,19 @@ int main()
     insererTableau(unArbre,tab,10);
 
     noeud* cherche100 = rechercher(unArbre,100);
-
+    printf("noeud 100:%i\n",getCle(cherche100));
     if (cherche100 != NULL){
-        printf("J’ai trouve le noeud 100.\n");
+        printf("J ai trouve le noeud 100.\n");
     }
 
-/*
+
     noeud* cherche101 = rechercher(unArbre,101);
+    printf("noeud 101:%i\n",getCle(cherche101));
     if (cherche101 != NULL){
-        printf("J’ai trouve le noeud 101.\n");
+        printf("J ai trouve le noeud 101.\n");
     }
 
-*/
+
 
 
 

@@ -138,17 +138,31 @@ void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r)){
 
 
 
-noeud* rechercher(arbre* r, int v){
-    printf("hello \n");
+noeud* rechercherMemo(arbre* r, int v,noeud* memo){
     if(getCle(r) == v){
-        printf("hey");
-        return r;
-    }
-    printf("gau\n");
-    rechercher(r->FGauche,v);
-    printf("droi\n");
-    rechercher(r->FDroit,v);
-    printf("null");
-    return NULL;
+        memo->cle=getCle(r);
+        return memo;
 
+    }
+
+    if(getCle(r->FGauche) != 0){
+        rechercherMemo(r->FGauche,v,memo);
+    }
+
+    if( getCle(r->FDroit) !=0){
+        rechercherMemo(r->FDroit,v,memo);
+    }
+
+    return memo;
+
+}
+
+
+noeud* rechercher(arbre* r,int v){
+    noeud* m =creerNoeud(NULL);
+    noeud* m1=rechercherMemo(r,v,m);
+    if (getCle(m1)!=0){
+        return m1;
+    }
+    return NULL;
 }
