@@ -222,7 +222,7 @@ void challenge_7 (){
    int nbv = nbVal(noeud0, 'I');
    printf("\nYour final letter  (73) has been inserted %i times\n", nbv);
  }
-/*
+
 void challenge_8 (){
 
    arbre * noeud0 = NULL;
@@ -252,7 +252,7 @@ void challenge_8 (){
    printf("\n============ SAVAGE CUT of 73 ============\n");
    afficher(noeud0, 0);
 }
-
+/*
 void challenge_9 (){
 
    arbre * noeud0 = NULL;

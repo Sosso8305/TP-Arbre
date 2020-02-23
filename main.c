@@ -26,12 +26,17 @@ int main()
 
     insererTableau(unArbre,tab,10);
 
-    afficherFonction(unArbre,0,getValeur);
+
+    afficher(unArbre,0);
+    printf("\n\n\n");
+    deforestationSauvage(noeud1);
+
+    afficher(unArbre,0);
+
+
 
 
 */
-
-
 
 
 
@@ -78,11 +83,11 @@ int main()
 
 
 
-    int i= 7;
+    int i= 8;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
     printf("\n---------------------------------------------\n");
-    challenge_7();
+    challenge_8();
     printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");

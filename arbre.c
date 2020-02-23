@@ -190,4 +190,10 @@ int nbVal(arbre* unArbre,int uneCle){
 }
 
 
+void deforestationSauvage(noeud* n){
+    n->FDroit=NULL;
+    n->FGauche=NULL;
+
+}
+
 

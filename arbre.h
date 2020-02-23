@@ -116,5 +116,13 @@ noeud* rechercherDerniereLettre(arbre* UnArbre);
 
 int nbVal(arbre* unArbre,int uneCle);
 
+/** \brief coupe le lien des fils avec le noeud n
+ *
+ * \param n noeud*
+ * \return void
+ *
+ */
+void deforestationSauvage(noeud* n);
+
 
 #endif // ARBRE_H_INCLUDED
