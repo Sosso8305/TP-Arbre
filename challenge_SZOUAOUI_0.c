@@ -222,7 +222,7 @@ void challenge_7 (){
    int nbv = nbVal(noeud0, 'I');
    printf("\nYour final letter  (73) has been inserted %i times\n", nbv);
  }
-
+/*
 void challenge_8 (){
 
    arbre * noeud0 = NULL;

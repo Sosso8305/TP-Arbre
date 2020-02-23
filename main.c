@@ -5,7 +5,7 @@
 
 int main()
 {
-    /*
+
     arbre* unArbre=NULL;
     unArbre=creerNoeud(666);
 
@@ -26,6 +26,19 @@ int main()
 
     insererTableau(unArbre,tab,10);
 
+    afficherFonction(unArbre,0,getValeur);
+
+
+
+
+
+
+
+
+
+
+
+/*
     noeud* cherche100 = rechercher(unArbre,100);
     printf("noeud 100:%i\n",getCle(cherche100));
     if (cherche100 != NULL){
@@ -64,16 +77,16 @@ int main()
 
 
 
-
-    int i= 6;
+/*
+    int i= 7;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
     printf("\n---------------------------------------------\n");
-    challenge_6();
+    challenge_7();
     printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");
-
+/*/
 
     return 0;
 

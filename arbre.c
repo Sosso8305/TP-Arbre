@@ -24,7 +24,7 @@ void accroche(noeud* dad, noeud* son){
     }
 
     else{
-            printf("Le noeud %i est deja present \n",son->cle);
+        dad->valeur+=1;
         }
 }
 
@@ -182,6 +182,8 @@ noeud* rechercherDerniereLettre(arbre* UnArbre){
     noeud* m =rechercher(UnArbre,var);
     return m;
 }
+
+
 
 
 
