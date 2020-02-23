@@ -5,7 +5,7 @@
 
 int main()
 {
-
+    /*
     arbre* unArbre=NULL;
     unArbre=creerNoeud(666);
 
@@ -40,7 +40,7 @@ int main()
     }
 
 
-
+*/
 
 
 /*
@@ -63,17 +63,17 @@ int main()
 
 
 
-/*
 
-    int i= 5;
+
+    int i= 6;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
     printf("\n---------------------------------------------\n");
-    challenge_5();
+    challenge_6();
     printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");
-*/
+
 
     return 0;
 

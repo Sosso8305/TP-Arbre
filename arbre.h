@@ -72,6 +72,16 @@ void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r));
 
 
 
+
+/** \brief Permet de copier un noeud
+ *
+ * \param Origin noeud*
+ * \param Cop noeud*
+ * \return void
+ *
+ */
+void copyNoeud(noeud* Origin ,noeud* Cop);
+
 /** \brief Fonction rechercher() avec un parametre memo pour faire passer la cle rechercher à travers les différente appel de la fonction
  *
  * \param r arbre*
@@ -92,6 +102,16 @@ noeud* rechercherMemo(arbre* r,int v,noeud* memo);
  *
  */
 noeud* rechercher(arbre* r,int v);
+
+
+
+/** \brief fait un appel a la fct recherche mais un parametre de v comme étant la dernier valeud de mon nom, I
+ *
+ * \param UnArbre arbre*
+ * \return noeud*
+ *
+ */
+noeud* rechercherDerniereLettre(arbre* UnArbre);
 
 
 
