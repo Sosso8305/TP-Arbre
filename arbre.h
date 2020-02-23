@@ -114,6 +114,7 @@ noeud* rechercher(arbre* r,int v);
 noeud* rechercherDerniereLettre(arbre* UnArbre);
 
 
+int nbVal(arbre* unArbre,int uneCle);
 
 
 #endif // ARBRE_H_INCLUDED

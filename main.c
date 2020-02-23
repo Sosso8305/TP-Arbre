@@ -5,7 +5,7 @@
 
 int main()
 {
-
+/*
     arbre* unArbre=NULL;
     unArbre=creerNoeud(666);
 
@@ -29,7 +29,7 @@ int main()
     afficherFonction(unArbre,0,getValeur);
 
 
-
+*/
 
 
 
@@ -77,7 +77,7 @@ int main()
 
 
 
-/*
+
     int i= 7;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
@@ -86,7 +86,7 @@ int main()
     printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");
-/*/
+
 
     return 0;
 

@@ -194,7 +194,7 @@ void challenge_6 (){
    noeud * n5 = rechercherDerniereLettre(noeud0);
    printf("Node found for your final letter: %i (%c) =? 73 (I) \n", n5->cle, n5->cle);
 }
-/*
+
 void challenge_7 (){
 
    arbre * noeud0 = NULL;

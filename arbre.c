@@ -35,6 +35,7 @@ void insererDansArbre(arbre* r, noeud*n){
 
     if (r->cle == n->cle){
         accroche(r,n);
+        free(n);
     }
     else if (n->cle < r->cle) {
         if (r->FGauche == NULL){
@@ -183,7 +184,10 @@ noeud* rechercherDerniereLettre(arbre* UnArbre){
     return m;
 }
 
-
+int nbVal(arbre* unArbre,int uneCle){
+    noeud* m = rechercher(unArbre,uneCle);
+    return getValeur(m);
+}
 
 
 
