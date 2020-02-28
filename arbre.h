@@ -73,23 +73,23 @@ void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r));
 
 /////////////////////FONCTION OVER////////////////////////////
 /*
-/** \brief Permet de copier un noeud
- *
- * \param Origin noeud*
- * \param Cop noeud*
- * \return void
- *
- *
+ \brief Permet de copier un noeud
+
+  \param Origin noeud*
+  \param Cop noeud*
+  \return void
+
+
 void copyNoeud(noeud* Origin ,noeud* Cop);
 
-/** \brief Fonction rechercher() avec un parametre memo pour faire passer la cle rechercher à travers les différente appel de la fonction
- *
- * \param r arbre*
- * \param v int
- * \param memo noeud*
- * \return noeud*
- *
- *
+ \brief Fonction rechercher() avec un parametre memo pour faire passer la cle rechercher à travers les différente appel de la fonction
+
+ \param r arbre*
+ \param v int
+  \param memo noeud*
+  \return noeud*
+
+
 noeud* rechercherMemo(arbre* r,int v,noeud* memo);
 
 */
@@ -125,6 +125,16 @@ int nbVal(arbre* unArbre,int uneCle);
  *
  */
 void deforestationSauvage(noeud* n);
+
+
+
+/** \brief coupe le lien des fils avec le noeud n et libere leur espace mémoire
+ *
+ * \param n noeud*
+ * \return void
+ *
+ */
+void deforestation (noeud* n);
 
 
 #endif // ARBRE_H_INCLUDED

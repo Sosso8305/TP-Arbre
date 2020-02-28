@@ -5,7 +5,7 @@
 
 int main()
 {
-/*
+
     arbre* unArbre=NULL;
     unArbre=creerNoeud(666);
 
@@ -29,14 +29,14 @@ int main()
 
     afficher(unArbre,0);
     printf("\n\n\n");
-    deforestationSauvage(noeud1);
+    deforestation(noeud1);
 
     afficher(unArbre,0);
 
 
 
 
-*/
+
 
 
 
@@ -79,7 +79,7 @@ int main()
 
 
 
-
+/*
 
 
 
@@ -92,7 +92,7 @@ int main()
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");
 
-
+*/
     return 0;
 
 }
