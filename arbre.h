@@ -71,15 +71,15 @@ void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r));
 
 
 
-
-
+/////////////////////FONCTION OVER////////////////////////////
+/*
 /** \brief Permet de copier un noeud
  *
  * \param Origin noeud*
  * \param Cop noeud*
  * \return void
  *
- */
+ *
 void copyNoeud(noeud* Origin ,noeud* Cop);
 
 /** \brief Fonction rechercher() avec un parametre memo pour faire passer la cle rechercher à travers les différente appel de la fonction
@@ -89,10 +89,12 @@ void copyNoeud(noeud* Origin ,noeud* Cop);
  * \param memo noeud*
  * \return noeud*
  *
- */
+ *
 noeud* rechercherMemo(arbre* r,int v,noeud* memo);
 
+*/
 
+/////////////////////////FIN FONCTION OVER////////////////////////////
 
 /** \brief recherche l'entier v dans l'arbre r et renvoie son adresse
  *

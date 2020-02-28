@@ -138,6 +138,8 @@ void afficherFonction(arbre* r,int decalage, int (*mafct)(arbre* r)){
 }
 
 
+/////////////////////FONCTION OVER////////////////////////////
+/*
 void copyNoeud(noeud* Origin ,noeud* Cop){
     Cop->cle=getCle(Origin);
     Cop->valeur= getValeur(Origin);
@@ -149,7 +151,7 @@ void copyNoeud(noeud* Origin ,noeud* Cop){
 
 
 
-noeud* rechercherMemo(arbre* r, int v,noeud* memo){
+noeud* rechercherMemo(arbre* r, int v,noeud* memo){                          //ces différentes fonction marchées mais je retourné l'adresse d'un neoud copié
     if(getCle(r) == v){
         copyNoeud(r,memo);
 
@@ -176,7 +178,25 @@ noeud* rechercher(arbre* r,int v){
     }
     return NULL;
 }
+*/
+/////////////////////////FIN FONCTION OVER////////////////////////////
 
+
+noeud* rechercher(arbre* r, int v){
+
+    if(getCle(r) == v){
+        return r;
+    }
+    else if (getCle(r)> v){
+        rechercher(r->FGauche,v);
+    }
+    else {
+        rechercher(r->FDroit,v);
+    }
+
+
+
+}
 
 noeud* rechercherDerniereLettre(arbre* UnArbre){
     int var= 'I';
