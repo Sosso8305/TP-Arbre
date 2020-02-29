@@ -252,7 +252,7 @@ void challenge_8 (){
    printf("\n============ SAVAGE CUT of 73 ============\n");
    afficher(noeud0, 0);
 }
-/*
+
 void challenge_9 (){
 
    arbre * noeud0 = NULL;
@@ -298,7 +298,7 @@ void challenge_9 (){
    else {
       printf("Not lucky, the left child is NULL.\n"); }
 }
-
+/*
 void challenge_10 (){
 
    arbre * noeud0 = NULL;

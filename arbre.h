@@ -136,5 +136,13 @@ void deforestationSauvage(noeud* n);
  */
 void deforestation (noeud* n);
 
+/** \brief fait la somme des cle d'un arbre
+ *
+ * \param r arbre*
+ * \return int
+ *
+ */
+int somme(arbre* r);
+
 
 #endif // ARBRE_H_INCLUDED

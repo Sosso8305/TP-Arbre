@@ -194,7 +194,7 @@ noeud* rechercher(arbre* r, int v){
         rechercher(r->FDroit,v);
     }
 
-    return NULL;
+
 }
 
 noeud* rechercherDerniereLettre(arbre* UnArbre){
@@ -220,14 +220,14 @@ void deforestation(noeud* n){
      if (n!=NULL){
         if (n->FGauche !=NULL){
             deforestation(n->FGauche);
-            free(n->FGauche);
             printf("deforestation: elimination du noeud %i fils gauche de %i \n",getCle(n->FGauche),getCle(n));
+            free(n->FGauche);
         }
 
         if (n->FDroit !=NULL){
             deforestation(n->FDroit);
-            free(n->FDroit);
             printf("deforestation: elimination du noeud %i fils droite de %i \n",getCle(n->FDroit),getCle(n));
+            free(n->FDroit);
         }
 
         n->FDroit=NULL;
@@ -238,3 +238,18 @@ void deforestation(noeud* n){
 }
 
 
+int somme(arbre* r){
+    if (r==NULL){
+        return 0;
+    }
+    else if(r->FGauche==NULL){
+        return getCle(r) + somme(r->FDroit);
+    }
+    else if(r->FDroit==NULL){
+        return getCle(r) + somme(r->FGauche);
+    }
+    else{
+        return getCle(r) + somme(r->FGauche) +somme(r->FDroit);
+    }
+
+}
