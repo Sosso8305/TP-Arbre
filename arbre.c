@@ -253,3 +253,80 @@ int somme(arbre* r){
     }
 
 }
+
+
+void parcoursProfondeur(arbre* r){
+    if (r!=NULL){
+        printf("%i  ",getCle(r));
+        if (r->FGauche!=NULL){
+            parcoursProfondeur(r->FGauche);
+        }
+        if (r->FDroit!=NULL){
+            parcoursProfondeur(r->FDroit);
+        }
+
+    }
+
+}
+
+
+void couperPetits(arbre* r,int seuil){          //Q36 fait à moitié
+    if (r!=NULL){                               //Q37 TODO (optionnel)
+        if(r->FGauche!=NULL){
+            if (getCle(r->FGauche)<seuil){
+                noeud* tmp = r->FGauche;
+                r->FGauche=r->FGauche->FDroit;
+                tmp->FDroit=NULL;
+                deforestation(tmp);
+                couperPetits(r,seuil);
+            }
+            else{
+                couperPetits(r->FGauche,seuil);
+            }
+
+        }
+
+    }
+}
+
+
+
+int initHauteur(arbre* r){
+    if (r==NULL){
+        return 1;
+    }
+    if (r->FGauche!=NULL){
+        r->FGauche->valeur= getValeur(r->FGauche)+ initHauteur(r->FGauche);
+    }
+    if (r->FDroit!=NULL){
+        r->FDroit->valeur= getValeur(r->FDroit)+ initHauteur(r->FDroit);
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+    /*if(r!=NULL){
+        return getValeur(r);
+    }
+    else if (r->FGauche!=NULL){
+        r->FGauche->valeur =getValeur(r)+1;
+        initHauteur(r->FGauche);
+    }
+    else if (r->FDroit!=NULL){
+        r->FDroit->valeur =getValeur(r)+1;
+        initHauteur(r->FDroit);
+    }
+
+
+}
+*/

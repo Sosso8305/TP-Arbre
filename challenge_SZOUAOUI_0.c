@@ -298,7 +298,7 @@ void challenge_9 (){
    else {
       printf("Not lucky, the left child is NULL.\n"); }
 }
-/*
+
 void challenge_10 (){
 
    arbre * noeud0 = NULL;
@@ -355,7 +355,7 @@ void challenge_11 (){
    couperPetits(noeud0, 89);
    afficher(noeud0, 0);
 }
-
+/*
 void challenge_12 (){
 
    arbre * noeud0 = NULL;

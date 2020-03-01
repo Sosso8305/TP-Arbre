@@ -5,26 +5,28 @@
 
 int main()
 {
+/*
     arbre* unArbre =creerNoeud(666);
     int tab[6] ={1000,5,100,1,6,200};
     insererTableau(unArbre,tab,6);
 
     afficher(unArbre,0);
 
+    couperPetits(unArbre,150);
+    //printf("\n \n resul %i",somme(unArbre));
 
-    printf("resul %i",somme(unArbre));
+    printf("\n -------------------------- \n");
+
+    //parcoursProfondeur(unArbre);
+
+    afficher(unArbre,0);
+
+*/
 
 
 
 
 
-
-
-
-
-
-
-/*
     arbre* unArbre=NULL;
     unArbre=creerNoeud(666);
 
@@ -46,13 +48,15 @@ int main()
     insererTableau(unArbre,tab,10);
 
 
+
     afficher(unArbre,0);
     printf("\n\n\n");
-    deforestation(noeud1);
+    //deforestation(noeud1);
+    initHauteur(unArbre);
 
-    afficher(unArbre,0);
+    afficherFonction(unArbre,0,getValeur);
 
-*/
+
 
 
 
@@ -93,14 +97,13 @@ int main()
 
 
 
+
 /*
-
-
-    int i= 9;
+    int i= 11;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
     printf("\n---------------------------------------------\n");
-    challenge_9();
+    challenge_11();
     printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");

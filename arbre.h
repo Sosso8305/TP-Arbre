@@ -145,4 +145,26 @@ void deforestation (noeud* n);
 int somme(arbre* r);
 
 
+/** \brief parcours en mode profondeur de l'arbre
+ *
+ * \param r arbre*
+ * \return void
+ *
+ */
+void parcoursProfondeur(arbre* r);
+
+
+/** \brief coupe tout les noeud ou la cle est inferieur au seuil
+ *
+ * \param a arbre*
+ * \param seuil int
+ * \return void
+ *
+ */
+void couperPetits(arbre* a, int seuil);
+
+
+int initHauteur(arbre * a);
+
+
 #endif // ARBRE_H_INCLUDED
