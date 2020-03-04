@@ -166,6 +166,7 @@ void couperPetits(arbre* a, int seuil);
 int maxV(int a,int b);
 int initHauteur(arbre * a);
 int difference(arbre* a);
+int estAVL(arbre* r);
 
 
 #endif // ARBRE_H_INCLUDED

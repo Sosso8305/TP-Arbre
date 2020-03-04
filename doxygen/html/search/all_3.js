@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['fdroit_11',['FDroit',['../structnoeud.html#afac94acf2a06a9ed2cd9ced23222a512',1,'noeud']]],
-  ['fgauche_12',['FGauche',['../structnoeud.html#a899dbb16d2b210833c0fc0c798f1d4b9',1,'noeud']]]
+  ['estavl_12',['estAVL',['../arbre_8c.html#a754add8cb5a8c93456d91d179b34b550',1,'estAVL(arbre *r):&#160;arbre.c'],['../arbre_8h.html#a754add8cb5a8c93456d91d179b34b550',1,'estAVL(arbre *r):&#160;arbre.c']]]
 ];

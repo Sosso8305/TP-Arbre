@@ -341,3 +341,19 @@ int difference(arbre* r){
 }
 
 
+int estAVL(arbre* r){
+    if (-1>getValeur(r) || getValeur(r)>1){
+        return 0;
+    }
+
+    if(r->FGauche!=NULL){
+            estAVL(r->FGauche);
+        }
+    if(r->FDroit!=NULL){
+            estAVL(r->FDroit);
+        }
+    return 1;
+
+
+}
+

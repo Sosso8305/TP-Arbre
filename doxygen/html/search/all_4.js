@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['getcle_13',['getCle',['../arbre_8c.html#ae263a2d987cc9d0833b98ec48a514897',1,'getCle(arbre *r):&#160;arbre.c'],['../arbre_8h.html#ae263a2d987cc9d0833b98ec48a514897',1,'getCle(arbre *r):&#160;arbre.c']]],
-  ['getvaleur_14',['getValeur',['../arbre_8c.html#af69426ba2cd96860921e35341442dd98',1,'getValeur(arbre *r):&#160;arbre.c'],['../arbre_8h.html#af69426ba2cd96860921e35341442dd98',1,'getValeur(arbre *r):&#160;arbre.c']]]
+  ['fdroit_13',['FDroit',['../structnoeud.html#afac94acf2a06a9ed2cd9ced23222a512',1,'noeud']]],
+  ['fgauche_14',['FGauche',['../structnoeud.html#a899dbb16d2b210833c0fc0c798f1d4b9',1,'noeud']]]
 ];

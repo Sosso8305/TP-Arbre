@@ -47,8 +47,8 @@ int main()
 
     insererTableau(unArbre,tab,10);
 
-
-
+*/
+/*
     afficher(unArbre,0);
     printf("\n\n\n");
     //deforestation(noeud1);
@@ -57,14 +57,14 @@ int main()
 
     afficherFonction(unArbre,0,difference);
 
-*/
+
 
 
 
 arbre* r2 = creerNoeud(100);
-int tab[16]={0,10,20,30,40,50,60,70,80,90,110,120,130,140,150,160};
+int tab2[16]={0,10,20,30,40,50,60,70,80,90,110,120,130,140,150,160};
 
-insererTableau(r2,tab,16);
+insererTableau(r2,tab2,16);
 
 afficher(r2,0);
 printf("\n\n\n\n");
@@ -72,6 +72,27 @@ initHauteur(r2);
 afficherFonction(r2,0,getValeur);
 printf("\n\n\n\n");
 afficherFonction(r2,0,difference);
+printf("\n\n\n\n");
+
+
+if (estAVL(unArbre)){
+    printf("Cet arbre est un AVL\n");
+}
+else{
+    printf("Cet arbre n’est pas un AVL\n");
+}
+
+if (estAVL(r2)){
+    printf("Cet arbre est un AVL\n");
+}
+else{
+    printf("Cet arbre n’est pas un AVL\n");
+}
+
+
+*/
+
+
 
 
 
@@ -113,17 +134,17 @@ afficherFonction(r2,0,difference);
 
 
 
-/*
-    int i= 11;
+
+    int i= 12;
     printf("\n---------------------------------------------\n");
     printf("\tChallenge %i pour %s\n",i,"szouaoui");
     printf("\n---------------------------------------------\n");
-    challenge_11();
+    challenge_12();
     printf("\n-----------------------------------------------\n");
     printf("\tFin du Challenge %i\n",i);
     printf("\n---------------------------------------------\n");
 
-*/
+
     return 0;
 
 }

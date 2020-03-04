@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tvalue_26',['TValue',['../arbre_8h.html#a6cbc7c4868332f7964668903cd5431e7',1,'arbre.h']]]
+  ['somme_28',['somme',['../arbre_8c.html#ac0605f522186a91eeaf09cb68cd6cc5a',1,'somme(arbre *r):&#160;arbre.c'],['../arbre_8h.html#ac0605f522186a91eeaf09cb68cd6cc5a',1,'somme(arbre *r):&#160;arbre.c']]]
 ];

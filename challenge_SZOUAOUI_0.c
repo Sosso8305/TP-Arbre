@@ -355,7 +355,7 @@ void challenge_11 (){
    couperPetits(noeud0, 89);
    afficher(noeud0, 0);
 }
-/*
+
 void challenge_12 (){
 
    arbre * noeud0 = NULL;
@@ -395,7 +395,7 @@ void challenge_12 (){
       printf("Ce n'est pas un AVL\n");
    }
 }
-
+/*
 void challenge_13 (){
 
    arbre * noeud0 = NULL;

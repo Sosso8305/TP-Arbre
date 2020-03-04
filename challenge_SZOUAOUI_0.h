@@ -29,9 +29,9 @@ void challenge_9();
 void challenge_10();
 
 void challenge_11();
-/*
-void challenge_12();
 
+void challenge_12();
+/*
 void challenge_13();
 
 void challenge_14();

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valeur_27',['valeur',['../structnoeud.html#a36a1efaccc2b87e4f8646bcee5caa236',1,'noeud']]]
+  ['tvalue_29',['TValue',['../arbre_8h.html#a6cbc7c4868332f7964668903cd5431e7',1,'arbre.h']]]
 ];
