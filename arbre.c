@@ -183,7 +183,9 @@ noeud* rechercher(arbre* r,int v){
 
 
 noeud* rechercher(arbre* r, int v){
-
+    if(r==NULL){
+        return NULL;
+    }
     if(getCle(r) == v){
         return r;
     }
@@ -319,5 +321,23 @@ int initHauteur(arbre* r){
 }
 
 
+int difference(arbre* r){
+    if (r!=NULL){
+        if ((r->FGauche == NULL) && (r->FDroit == NULL)){
+                return 0;
+        }
+        else if ((r->FGauche != NULL) && (r->FDroit == NULL)){
+            return getValeur(r->FGauche)+1;
+        }
+        else if ((r->FGauche == NULL) && (r->FDroit != NULL)){
+            return -1-getValeur(r->FDroit);
+
+        }
+        else if ((r->FGauche != NULL) && (r->FDroit != NULL)){
+            return getValeur(r->FGauche) - getValeur(r->FDroit);
+        }
+    }
+    return -1;
+}
 
 
