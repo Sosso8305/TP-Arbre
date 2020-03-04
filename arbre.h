@@ -163,7 +163,7 @@ void parcoursProfondeur(arbre* r);
  */
 void couperPetits(arbre* a, int seuil);
 
-
+int maxV(int a,int b);
 int initHauteur(arbre * a);
 
 

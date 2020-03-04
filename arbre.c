@@ -291,42 +291,33 @@ void couperPetits(arbre* r,int seuil){          //Q36 fait à moitié
 
 
 
-int initHauteur(arbre* r){
-    if (r==NULL){
-        return 1;
+int maxV(int a, int b){
+    if (a > b){
+        return a;
     }
-    if (r->FGauche!=NULL){
-        r->FGauche->valeur= getValeur(r->FGauche)+ initHauteur(r->FGauche);
+    else{
+        return b;
     }
-    if (r->FDroit!=NULL){
-        r->FDroit->valeur= getValeur(r->FDroit)+ initHauteur(r->FDroit);
-    }
-
-
-
-
-
-
-
-
-
 }
 
 
 
+int initHauteur(arbre* r){
 
-    /*if(r!=NULL){
+    if (r!=NULL){
+
+        if ((r->FGauche == NULL) && (r->FDroit == NULL)){
+            r->valeur = 0;
+        }
+        else{
+            r->valeur= maxV(initHauteur(r->FGauche),initHauteur(r->FDroit))+1;
+        }
+
         return getValeur(r);
     }
-    else if (r->FGauche!=NULL){
-        r->FGauche->valeur =getValeur(r)+1;
-        initHauteur(r->FGauche);
-    }
-    else if (r->FDroit!=NULL){
-        r->FDroit->valeur =getValeur(r)+1;
-        initHauteur(r->FDroit);
-    }
-
-
+    return -1;
 }
-*/
+
+
+
+
